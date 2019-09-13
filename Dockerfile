@@ -9,5 +9,5 @@ RUN ln -s $(which nodejs) /usr/bin/node
 RUN npm install --global nodemon
 
 # Expose a range of ports to 'play' on
-EXPOSE 4000-10000
-CMD ["crystal", "play", "-v", "-b", "0.0.0.0", "-p", "8080"]
+EXPOSE 4040-4060
+CMD ["crystal", "play", "-v", "-b", "0.0.0.0", "-p", "4040"]
