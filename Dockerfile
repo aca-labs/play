@@ -1,4 +1,4 @@
-FROM crystallang/crystal:0.30.1
+FROM crystallang/crystal:0.31.0
 
 RUN apt-get update && \
     apt-get install --no-install-recommends -y curl iputils-ping curl nodejs npm vim
