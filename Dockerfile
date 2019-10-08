@@ -1,4 +1,4 @@
-FROM crystallang/crystal:0.31.0
+FROM crystallang/crystal:0.31.1
 
 RUN apt-get update && apt-get install --no-install-recommends -y iputils-ping curl vim
 
