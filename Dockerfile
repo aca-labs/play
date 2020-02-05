@@ -13,7 +13,7 @@ RUN apk add watchexec --repository=http://dl-cdn.alpinelinux.org/alpine/edge/tes
 
 COPY . /play
 WORKDIR /play
-RUN rm -r lib bin
+RUN rm -rf lib bin
 RUN shards install
 
 # Expose a range of ports to 'play' on
