@@ -8,6 +8,9 @@ dependencies:
   sam:
     github: imdrasil/sam.cr
 
+  faker:
+    github: askn/faker
+
   engine-models:
     github: acaengine/models
     branch: master

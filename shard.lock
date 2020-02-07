@@ -46,7 +46,7 @@ shards:
 
   engine-drivers:
     github: aca-labs/crystal-engine-drivers
-    commit: e09581450f054a16d58015859182a8976159706b
+    commit: b5ee9b9c479c8569491a2442357a6898f8c685bf
 
   engine-models:
     github: acaengine/models
@@ -54,11 +54,15 @@ shards:
 
   etcd:
     github: aca-labs/crystal-etcd
-    commit: d2a9829c3c2160647ecc8e3aaed3eb7990c14032
+    commit: d9288cf651d178724fd93294b7c4171d57cdfbc9
 
   exec_from:
     github: aca-labs/exec_from
     commit: 0372de93356432eed1c1aa7c55f97cf9ecc14553
+
+  faker:
+    github: askn/faker
+    version: 0.4.0
 
   habitat:
     github: luckyframework/habitat
