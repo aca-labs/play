@@ -1,4 +1,4 @@
-# ACA play container
+# PlaceOS play container
 
 - Docker environment for crystal development.
 - Includes [`watchexec`](https://github.com/watchexec/watchexec) for running specs of projects mapped into the container.

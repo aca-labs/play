@@ -1,6 +1,7 @@
 FROM crystallang/crystal:0.33.0-alpine
 
-RUN apk update
+WORKDIR /play
+
 RUN apk add \
     curl \
     gdb \
@@ -12,10 +13,13 @@ RUN apk add \
 # TODO: remove this once watchexec is in the main repository
 RUN apk add watchexec --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing
 
-COPY . /play
-WORKDIR /play
-RUN rm -rf lib bin
+COPY shard.yml shard.yml
+COPY shard.lock shard.lock
+
 RUN shards install
+
+COPY README.md README.md
+COPY sam.cr sam.cr
 
 # Expose a range of ports to launch `crystal play` on
 EXPOSE 4040-4060

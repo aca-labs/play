@@ -6,7 +6,7 @@ shards:
 
   action-controller:
     github: spider-gazelle/action-controller
-    version: 2.3.2
+    version: 2.3.4
 
   active-model:
     github: spider-gazelle/active-model
@@ -29,8 +29,8 @@ shards:
     version: 0.3.0
 
   crystal-rethinkdb:
-    github: kingsleyh/crystal-rethinkdb
-    version: 0.1.10
+    github: aca-labs/crystal-rethinkdb
+    commit: 8155487b5cdbced9fd84cc242d459bcb9cd3b015
 
   debug:
     github: Sija/debug.cr
@@ -40,25 +40,21 @@ shards:
     github: drujensen/delimiter_tree
     version: 0.1.4
 
-  engine-driver:
-    github: aca-labs/crystal-engine-driver
-    commit: 258c605fd0b4e2a0df4687b3e39cc3fe539eb925
+  driver:
+    github: placeos/driver
+    commit: 25f596a36cf291f489e5df0c3f862a40670a12f8
 
-  engine-drivers:
-    github: aca-labs/crystal-engine-drivers
-    commit: b5ee9b9c479c8569491a2442357a6898f8c685bf
-
-  engine-models:
-    github: acaengine/models
-    commit: 98acd836d37380ebaa8d56c4eb214d19d377f41c
+  drivers:
+    github: placeos/drivers
+    commit: 984d396d37aa8981b6c3590bb46a83e73ea6f8aa
 
   etcd:
     github: aca-labs/crystal-etcd
-    commit: d9288cf651d178724fd93294b7c4171d57cdfbc9
+    version: 0.3.1
 
   exec_from:
     github: aca-labs/exec_from
-    commit: 0372de93356432eed1c1aa7c55f97cf9ecc14553
+    commit: d48ea78370cc55f83fe5c2fc516a790134fbf3a7
 
   faker:
     github: askn/faker
@@ -70,7 +66,7 @@ shards:
 
   hound-dog:
     github: aca-labs/hound-dog
-    commit: d03b830eef527b44d5f03cdbae4534fb0d3d8f06
+    version: 2.0.2
 
   ipaddress:
     github: Sija/ipaddress.cr
@@ -84,13 +80,17 @@ shards:
     github: jeromegn/kilt
     version: 0.6.0
 
+  models:
+    github: placeos/models
+    commit: 6c068d5466ea1186a7cedb16987c753cb3078851
+
   murmur3:
     github: aca-labs/murmur3
     commit: 7cbe25c0ca8d052c9d98c377c824dcb0e038c790
 
   neuroplastic:
     github: aca-labs/neuroplastic
-    commit: 2e764788efa0e59f8b24605e3d71770459f3fb3a
+    commit: 090e63375a5c12d81fb006e737c28bb3a325f27c
 
   openssl_ext:
     github: stakach/openssl_ext
@@ -110,7 +110,7 @@ shards:
 
   protobuf:
     github: jeromegn/protobuf.cr
-    version: 2.1.2
+    version: 2.2.0
 
   redis:
     github: stefanwille/crystal-redis
@@ -122,10 +122,10 @@ shards:
 
   rethinkdb-orm:
     github: spider-gazelle/rethinkdb-orm
-    commit: 994b644d62378f5c691c7eb6562b737321898edc
+    commit: db9633d99c3b51d656f94859eabfec7633b35723
 
   retriable:
-    github: Sija/retriable.cr
+    github: sija/retriable.cr
     version: 0.2.0
 
   rwlock:
@@ -138,7 +138,7 @@ shards:
 
   ssh2:
     github: spider-gazelle/ssh2.cr
-    version: 1.2.3
+    version: 1.2.4
 
   tasker:
     github: spider-gazelle/tasker
@@ -151,4 +151,8 @@ shards:
   tokenizer:
     github: spider-gazelle/tokenizer
     version: 1.1.0
+
+  ulid:
+    github: aca-labs/ulid
+    version: 0.1.2
 
