@@ -1,6 +1,6 @@
-require "crystal-rethinkdb"
 require "http/client"
 require "models/spec/generator"
+require "rethinkdb"
 require "sam"
 require "uuid"
 require "yaml"

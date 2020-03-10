@@ -28,10 +28,6 @@ shards:
     github: kostya/cron_parser
     version: 0.3.0
 
-  crystal-rethinkdb:
-    github: aca-labs/crystal-rethinkdb
-    commit: 8155487b5cdbced9fd84cc242d459bcb9cd3b015
-
   debug:
     github: Sija/debug.cr
     version: 1.1.0
@@ -120,9 +116,13 @@ shards:
     github: caspiano/rendezvous-hash
     version: 0.3.1
 
+  rethinkdb:
+    github: aca-labs/crystal-rethinkdb
+    version: 0.2.0
+
   rethinkdb-orm:
     github: spider-gazelle/rethinkdb-orm
-    commit: db9633d99c3b51d656f94859eabfec7633b35723
+    commit: 63df100c981ae2c71c3f29e7e92b77b92446f643
 
   retriable:
     github: sija/retriable.cr

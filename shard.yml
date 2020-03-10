@@ -1,5 +1,6 @@
 name: play
 version: 0.1.0
+license: MIT
 
 description: |
   Set of scripts and a container environment to make engine development easier
@@ -31,8 +32,10 @@ dependencies:
     github: aca-labs/hound-dog
     branch: master
 
+  rethinkdb:
+    github: aca-labs/crystal-rethinkdb
+
   rethinkdb-orm:
     github: spider-gazelle/rethinkdb-orm
     branch: master
 
-license: MIT
