@@ -62,12 +62,10 @@ namespace "generate" do
     driver_module_name = "PrivateHelper"
     driver_name = "spec_helper"
     driver_role = PlaceOS::Model::Driver::Role::Logic
-    driver_version = SemanticVersion.new(major: 0, minor: 1, patch: 0)
     driver = PlaceOS::Model::Driver.new(
       name: driver_name,
       role: driver_role,
       commit: "head",
-      version: driver_version,
       module_name: driver_module_name,
       file_name: driver_file_name,
     )
