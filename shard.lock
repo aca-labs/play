@@ -38,11 +38,11 @@ shards:
 
   driver:
     github: placeos/driver
-    commit: 25f596a36cf291f489e5df0c3f862a40670a12f8
+    commit: 9327e72aa6bd784a1d85185c408bed18345a566f
 
   drivers:
     github: placeos/drivers
-    commit: 984d396d37aa8981b6c3590bb46a83e73ea6f8aa
+    commit: f256eb7c1fe57e3e5954338c5da78150e9c62930
 
   etcd:
     github: aca-labs/crystal-etcd
@@ -78,7 +78,7 @@ shards:
 
   models:
     github: placeos/models
-    commit: 6c068d5466ea1186a7cedb16987c753cb3078851
+    commit: 2c69a77e712b03f7253b3b3a40948159e6c24b0b
 
   murmur3:
     github: aca-labs/murmur3
@@ -118,11 +118,11 @@ shards:
 
   rethinkdb:
     github: aca-labs/crystal-rethinkdb
-    version: 0.2.0
+    version: 0.2.1
 
   rethinkdb-orm:
     github: spider-gazelle/rethinkdb-orm
-    commit: 63df100c981ae2c71c3f29e7e92b77b92446f643
+    commit: 3e383e53dd13aeffb9d6fb6d745a933e18982161
 
   retriable:
     github: sija/retriable.cr
