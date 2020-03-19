@@ -28,6 +28,10 @@ shards:
     github: kostya/cron_parser
     version: 0.3.0
 
+  db:
+    github: crystal-lang/crystal-db
+    version: 0.8.0
+
   debug:
     github: Sija/debug.cr
     version: 1.1.0
@@ -38,7 +42,7 @@ shards:
 
   driver:
     github: placeos/driver
-    commit: 9327e72aa6bd784a1d85185c408bed18345a566f
+    commit: daf2f25f414ed2dc78565e200a84852dcc351db0
 
   drivers:
     github: placeos/drivers
@@ -78,15 +82,15 @@ shards:
 
   models:
     github: placeos/models
-    commit: 2c69a77e712b03f7253b3b3a40948159e6c24b0b
+    commit: 91c7a77df3968853d52b90e2671b3394769ce8d7
 
   murmur3:
     github: aca-labs/murmur3
     commit: 7cbe25c0ca8d052c9d98c377c824dcb0e038c790
 
   neuroplastic:
-    github: aca-labs/neuroplastic
-    commit: 090e63375a5c12d81fb006e737c28bb3a325f27c
+    github: spider-gazelle/neuroplastic
+    version: 1.3.6
 
   openssl_ext:
     github: stakach/openssl_ext
@@ -118,11 +122,11 @@ shards:
 
   rethinkdb:
     github: aca-labs/crystal-rethinkdb
-    version: 0.2.1
+    version: 0.2.2
 
   rethinkdb-orm:
     github: spider-gazelle/rethinkdb-orm
-    commit: 3e383e53dd13aeffb9d6fb6d745a933e18982161
+    commit: ce27d9fd152dda4bc52d41ce528a77f34166ec50
 
   retriable:
     github: sija/retriable.cr

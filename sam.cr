@@ -55,6 +55,7 @@ namespace "generate" do
     repository.uri = repository_uri
     repository.name = repository_name
     repository.folder_name = repository_folder_name
+    repository.description = "PlaceOS Private Drivers"
     repository.save!
 
     # Driver metadata
@@ -97,7 +98,7 @@ namespace "generate" do
     # Module metadata
     module_name = "TestModule-#{version}"
     mod = PlaceOS::Model::Generator.module(driver: driver, control_system: control_system)
-    mod.name = module_name
+    mod.custom_name = module_name
     mod.save!
 
     # Update subarrays of ControlSystem
