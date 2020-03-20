@@ -47,19 +47,24 @@ namespace "generate" do
   task "documents" do
     version = UUID.random.to_s.split('-').first
 
-    # Repository metadata
-    repository_uri = "https://github.com/placeos/private-drivers"
-    repository_folder_name = "drivers"
-    repository_name = repository_folder_name
-    repository = PlaceOS::Model::Generator.repository(type: PlaceOS::Model::Repository::Type::Driver)
-    repository.uri = repository_uri
-    repository.name = repository_name
-    repository.folder_name = repository_folder_name
-    repository.description = "PlaceOS Private Drivers"
-    repository.save!
+    # Private Repository metadata
+    private_repository = PlaceOS::Model::Generator.repository(type: PlaceOS::Model::Repository::Type::Driver)
+    private_repository.uri = "https://github.com/placeos/private-drivers"
+    private_repository.name = "Private Drivers"
+    private_repository.folder_name = "private-drivers"
+    private_repository.description = "PlaceOS Private Drivers"
+    private_repository.save!
+
+    # Drivers Repository metadata
+    drivers_repository = PlaceOS::Model::Generator.repository(type: PlaceOS::Model::Repository::Type::Driver)
+    drivers_repository.uri = "https://github.com/placeos/drivers"
+    drivers_repository.name = "Drivers"
+    drivers_repository.folder_name = "drivers"
+    drivers_repository.description = "PlaceOS Drivers"
+    drivers_repository.save!
 
     # Driver metadata
-    driver_file_name = "drivers/place/private_helper.cr"
+    driver_file_name = "private-drivers/place/private_helper.cr"
     driver_module_name = "PrivateHelper"
     driver_name = "spec_helper"
     driver_role = PlaceOS::Model::Driver::Role::Logic
@@ -70,7 +75,7 @@ namespace "generate" do
       module_name: driver_module_name,
       file_name: driver_file_name,
     )
-    driver.repository = repository
+    driver.repository = private_repository
     driver.save!
 
     # Zone metadata
