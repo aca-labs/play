@@ -64,7 +64,7 @@ namespace "generate" do
     drivers_repository.save!
 
     # Driver metadata
-    driver_file_name = "private-drivers/place/private_helper.cr"
+    driver_file_name = "drivers/place/private_helper.cr"
     driver_module_name = "PrivateHelper"
     driver_name = "spec_helper"
     driver_role = PlaceOS::Model::Driver::Role::Logic
@@ -75,6 +75,7 @@ namespace "generate" do
       module_name: driver_module_name,
       file_name: driver_file_name,
     )
+
     driver.repository = private_repository
     driver.save!
 
