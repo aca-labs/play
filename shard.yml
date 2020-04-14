@@ -14,11 +14,11 @@ dependencies:
 
   models:
     github: placeos/models
-    branch: master
+    version: 0.8.1
 
   driver:
     github: placeos/driver
-    branch: master
+    version: ~> 1.2
 
   drivers:
     github: placeos/drivers
@@ -26,16 +26,14 @@ dependencies:
 
   etcd:
     github: aca-labs/crystal-etcd
-    branch: master
 
   hound-dog:
     github: aca-labs/hound-dog
-    branch: master
+    version: ~> 2.0
 
   rethinkdb:
     github: aca-labs/crystal-rethinkdb
 
   rethinkdb-orm:
     github: spider-gazelle/rethinkdb-orm
-    branch: master
-
+    version: ~> 2.7
