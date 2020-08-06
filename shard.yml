@@ -12,28 +12,27 @@ dependencies:
   faker:
     github: askn/faker
 
-  models:
+  placeos-models:
     github: placeos/models
-    version: 0.8.1
+    version: ">= 4"
 
-  driver:
+  placeos-driver:
     github: placeos/driver
-    version: ~> 1.2
+    version: ">= 1.2"
 
   drivers:
     github: placeos/drivers
-    branch: master
 
   etcd:
-    github: aca-labs/crystal-etcd
+    github: place-labs/crystal-etcd
 
   hound-dog:
-    github: aca-labs/hound-dog
+    github: place-labs/hound-dog
     version: ~> 2.0
 
   rethinkdb:
-    github: aca-labs/crystal-rethinkdb
+    github: kingsleyh/crystal-rethinkdb
 
   rethinkdb-orm:
     github: spider-gazelle/rethinkdb-orm
-    version: ~> 2.7
+    version: ">= 2.7"
